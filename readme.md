@@ -81,7 +81,7 @@ If you use Nginx you can bundle CA and custom CRT into one file for better use.
 Good luck!
 
 References:
-* [Certificate Tools for confgi files](https://certificatetools.com/)
+* [Certificate Tools for config files](https://certificatetools.com/)
 * [Create Certificate Authority](https://www.golinuxcloud.com/create-certificate-authority-root-ca-linux/)
 * [Setup SSL on NGINX](https://www.ssltrust.com.au/help/setup-guides/setup-ssl-nginx-configure-best-security)
 
