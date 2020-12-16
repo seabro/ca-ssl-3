@@ -1,4 +1,4 @@
-# How to create Selfsigned CA and custom Wildcars certificate
+# How to create Selfsigned CA and custom Wildcard certificate
 
 I had so many trouble to create a custom CA and try to sign 2nd wildcard certificate with it. So... after some trial and error this is a solution.
 
