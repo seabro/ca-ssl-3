@@ -8,15 +8,15 @@ We will need:
 
 First you have to create key for CA certificate. We are gonna name it **selfsignCA.key**. When key is generated you have to enter password and verify it.
 
-`openssl genrsa -des3 -out selfsignCA.key 4096`
+```openssl genrsa -des3 -out selfsignCA.key 4096```
 
-![image](https://via.placeholder.com/350x150)
+![image](https://github.com/seabro/ca-ssl-3/raw/main/img/capass.jpg)
 
 Next step is to generate CA certificate itself with already created key. We are gonna name it **selfsignCA.crt**. When promts you have to ander key password, and after that you enter Certificate Data. You can use default values or your own, nevermind.
 
 `openssl req -new -x509 -days 3650 -key selfsignCA.key -out selfsignCA.crt`
 
-![image](https://via.placeholder.com/350x150)
+![image](https://github.com/seabro/ca-ssl-3/raw/main/img/cacrt.jpg)
 
 ### Now you are succesfuly created CA root certificate
 
@@ -57,7 +57,7 @@ you can check it with:
 
 `openssl req -noout -text -in somedomain.csr`
 
-![image](https://via.placeholder.com/350x150)
+![image](https://github.com/seabro/ca-ssl-3/raw/main/img/x509v3.jpg)
 
 If it is everting ok, you can sign it with early created CA. We will name final CRT file somedomain.crt. Main thing is that we use -extfile flag with out config file and -extensions flags with section from our config file with **subjectAltName** for Subject Alternative Names. To succesfully you will have to enter password from CA key created file
 
