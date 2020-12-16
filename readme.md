@@ -1,9 +1,9 @@
 # How to create Selfsigned CA and custom Wildcars certificate
 
-I had many trouble to create custom CA and try to sing 2nd wildcard certificate with it. So after some trial and error this is solution.
+I had many trouble to create custom CA and try to sign 2nd wildcard certificate with it. So after some trial and error this is solution.
 
 We will need:
- 1. some password for CA (e.g. MyCACrtPassword)
+ 1. Some password for CA (e.g. MyCACrtPassword)
  2. Config file for CSR (e.g. somename.cnf)
 
 First you have to create key for CA certificate. We are gonna name it **selfsignCA.key**. When key is generated you have to enter password and verify it.
